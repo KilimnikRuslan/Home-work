@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+.bloc {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px;
+    margin-bottom: 30px;
+    border: 2px dashed red;
+    background-color: green;
+}
+/* --------------------------------------------- */
+
+.text-bloc {
+    width: 1000px;
+    
+}
+img {
+    float: left;
+    margin: 0 12px 20px 0;
+}
+.bloc-img {
+    width: 180px;
+    height: 120px;
+    float: right;
+    margin: 15px 0 10px 10px  ;
+}
