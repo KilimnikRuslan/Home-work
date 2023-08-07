@@ -1,0 +1,42 @@
+.my-bloc {
+  width: 600px;
+  height: 600px;
+  background-color: #0d5825;
+  transform: translate(400px, 50px);
+}
+q {
+  display: block;
+  transform: translate(82px, 30px);
+  color: #ffffff;
+  font-size: 25px;
+}
+cite {
+  display: block;
+  transform: translate(200px, 40px);
+  color: #ffffff;
+  font-size: 25px;
+}
+
+img {
+  width: 150px;
+  transform: translate(180px, 250px) rotate(-25deg);
+}
+img:hover {
+  width: 150px;
+  transform: translate(180px, 220px) rotate(-25deg);
+  transition-duration: 0.8s;
+}
+img:nth-child(4) {
+  transform: translate(72px, 260px) rotate(-10deg);
+}
+img:nth-child(4):hover {
+  transform: translate(72px, 240px) rotate(-10deg);
+}
+img:nth-child(5){
+  transform: translate(-32px, 278px) rotate(10deg);
+}
+img:nth-child(5):hover {
+  transform: translate(-32px, 248px) rotate(10deg);
+}
+
+
