@@ -1,0 +1,44 @@
+
+.bloc {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+    width: 320px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid #000000;
+    border-top-left-radius: 1.3em 1.3em;
+    border-top-right-radius: 1.3em 1.3em;
+    margin: 15% 40%; 
+}
+div div {
+    display: inline-flex;
+    flex-grow: 1;
+    width: 100px;
+    height: 50px;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.square-one { 
+    order: -1;
+    background-color: #df0808;
+}
+.square-two {
+    background-color: #0a2b7d;
+    order: -4;
+}
+.square-three {
+    background-color: #900ba7;
+    order: -5;
+}
+.square-four {
+    background-color: #0c9813;
+    order: -2;
+}
+.square-five {
+    background-color: #e3f305;
+    order: 1;
+}
+
