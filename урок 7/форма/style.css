@@ -1,0 +1,65 @@
+.container {
+    width: 400px;
+}
+.bloc {
+    display: grid;
+    grid-template-columns: .2fr .5fr;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+.container select {
+    margin: 20px 0;
+    width: 100%;
+}
+.btn {
+    margin-top: 15px;
+    border: 1px solid #ddd7d7;
+    background-color: #ffffff;
+    color: #6d6767;
+}
+.form textarea {
+    grid-row: 5;
+    width: inherit;
+    height: 150px;
+    resize: none;
+}
+
+.bloc-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.real-checkbox {
+    appearance: none;
+    position: absolute;
+
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(180deg, #7fed93 0, #6ee974 16.67%, #7aed1c 33.33%, #25e418 50%, #00d633 66.67%, #00c945 83.33%, #00bf54 100%);
+    border-radius: 4px;
+    margin-right: 5px;
+    vertical-align: sub;
+    position: relative;
+}
+.custom-checkbox::before {
+    content:'';
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    background-image: url(./img/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-left: 1px;
+}
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
